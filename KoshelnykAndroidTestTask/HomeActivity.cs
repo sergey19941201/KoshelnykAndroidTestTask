@@ -6,6 +6,7 @@ using System.Text;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
+using Android.Net;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -21,6 +22,22 @@ namespace KoshelnykAndroidTestTask
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Home);
+
+            //checking internet connection
+            ConnectivityManager connectivityManager = (ConnectivityManager)GetSystemService(ConnectivityService);
+
+            NetworkInfo activeConnection = connectivityManager.ActiveNetworkInfo;
+            bool isOnline = (activeConnection != null) && activeConnection.IsConnected;
+            //checking internet connection ended
+
+            if (isOnline == false)
+            {
+                Toast.MakeText(this, "No Internet Connection.\nTurn the Internet connection on and try again", ToastLength.Long).Show();
+            }
+            else
+            {
+
+            }
         }
     }
 }
