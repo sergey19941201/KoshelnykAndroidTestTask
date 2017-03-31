@@ -4,6 +4,7 @@ using Android.Content.PM;
 using Android.Net;
 using Android.Widget;
 using Android.OS;
+using KoshelnykAndroidTestTask.RequestClasses;
 
 namespace KoshelnykAndroidTestTask
 {
@@ -24,11 +25,20 @@ namespace KoshelnykAndroidTestTask
             bool isOnline = (activeConnection != null) && activeConnection.IsConnected;
             //checking internet connection ended
 
-            FindViewById<Button>(Resource.Id.loginBn).Click += delegate
+            var loginET = FindViewById<EditText>(Resource.Id.loginET);
+            var passwordET = FindViewById<EditText>(Resource.Id.passwordET);
+
+            Authentication authentication = new Authentication();
+
+            FindViewById<Button>(Resource.Id.loginBn).Click += async delegate
             {
                 if (isOnline == true)
                 {
-                    StartActivity(new Intent(this, typeof(HomeActivity)));
+                    //var url = "https://networkrail-uk-qa.traffilog.com/UK/api/User/Login?username=" + loginET.Text +
+                       //       "%40live.com&password=" + passwordET.Text + "&api_key=%2FUK%2Fapi%2FUser%2FLogin";
+                       var url= "https://networkrail-uk-qa.traffilog.com/UK/api/User/Login?username=nemesises%40live.com&password=dontoretto23&api_key=%2FUK%2Fapi%2FUser%2FLogin";
+                    await authentication.FetchAsync(url);
+                    //StartActivity(new Intent(this, typeof(HomeActivity)));
                 }
                 else
                 {

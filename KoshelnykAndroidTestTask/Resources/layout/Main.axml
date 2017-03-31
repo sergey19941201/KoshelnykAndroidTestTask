@@ -13,45 +13,53 @@
         android:layout_marginTop="80pt"
         android:layout_marginLeft="340pt"
         android:layout_width="350pt" />
-  <android.support.design.widget.TextInputLayout
-      android:layout_width="295.5dp"
-      android:layout_gravity="center"
-      android:layout_height="55.5dp"
-      android:id="@+id/CityInputLayout">
     <EditText
         android:layout_gravity="center"
-        android:id="@+id/cityNameET"
+        android:id="@+id/loginET"
         android:textColor="#ffffff"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:hint="Enter your city name" />
-  </android.support.design.widget.TextInputLayout>
+        android:layout_width="294.0dp"
+        android:layout_height="54.0dp"
+        android:hint="@string/loginHint"
+        android:layout_marginTop="168.0dp"
+        android:layout_marginLeft="115.5dp"
+        android:background="#00ffffff" />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/passwordET"
+        android:textColor="#ffffff"
+        android:layout_width="294.0dp"
+        android:layout_height="50.0dp"
+        android:hint="@string/passwordHint"
+        android:layout_marginTop="228.5dp"
+        android:layout_marginLeft="115.5dp"
+        android:background="#00ffffff"
+        android:inputType="textPassword" />
     <Button
         android:text="@string/login"
         android:layout_width="366.0dp"
         android:layout_height="59.0dp"
         android:id="@+id/loginBn"
-        android:layout_marginTop="143.0pt"
+        android:layout_marginTop="335.8dp"
         android:background="#f6a623"
         android:textSize="34dp"
-        android:layout_marginLeft="40pt" />
+        android:layout_marginLeft="63.9dp" />
     <Button
         android:text="@string/forgotYourPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/forgotYourPassword"
-        android:layout_marginTop="180pt"
+        android:layout_marginTop="412.0dp"
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:background="#00ffffff"
         android:textSize="18dp"
-        android:layout_marginLeft="80pt" />
+        android:layout_marginLeft="193.8dp" />
     <TextView
         android:text="@string/AllRightsReserved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/forgotYourPassword"
-        android:layout_marginTop="230pt"
+        android:layout_marginTop="543.1dp"
         android:textAllCaps="false"
         android:textColor="#878787"
         android:textSize="18dp"

@@ -4,6 +4,8 @@
   <string name="ApplicationName">KoshelnykAndroidTestTask</string>
   <string name="goodMorning">Good Morning Sir</string>
   <string name="login">LOGIN</string>
+  <string name="loginHint">user name</string>
+  <string name="passwordHint">password</string>
   <string name="forgotYourPassword">Forgot your password?</string>
   <string name="AllRightsReserved">©2016 Traffilog Ltd. All rights reserved.</string>
 </resources>
