@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +11,7 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="55.0dp"
+        android:layout_height="wrap_content"
         android:id="@+id/linearLayout1"
         android:background="@drawable/header">
         <ImageButton
@@ -39,4 +39,86 @@
             android:textSize="10dp"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>
-</RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6.0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="35.0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="8"
+            android:layout_marginLeft="0.0dp">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/navigBn"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="41.0dp"
+                android:background="@drawable/nav_button" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/messagingBn"
+                android:background="@drawable/messaging_btn"
+                android:layout_marginLeft="28.0dp" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/journeySelectionBn"
+                android:layout_marginLeft="28.0dp"
+                android:background="@drawable/select_journey_btn" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/i_c_eBn"
+                android:background="@drawable/i_c_ebtn"
+                android:layout_marginLeft="28.0dp"
+                android:layout_marginRight="41.0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="20.0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="9.1">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/pointOfInterestBn"
+                android:scaleType="fitCenter"
+                android:background="@drawable/p_o_i_btn"
+                android:layout_marginLeft="41.0dp" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/vehicleCheckBn"
+                android:background="@drawable/vhicle_check_btn"
+                android:layout_marginLeft="28.0dp" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/drivingReportBn"
+                android:layout_marginLeft="28.0dp"
+                android:background="@drawable/driving_report" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
