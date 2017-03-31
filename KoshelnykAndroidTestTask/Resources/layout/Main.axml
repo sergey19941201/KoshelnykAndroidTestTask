@@ -13,6 +13,19 @@
         android:layout_marginTop="80pt"
         android:layout_marginLeft="340pt"
         android:layout_width="350pt" />
+  <android.support.design.widget.TextInputLayout
+      android:layout_width="295.5dp"
+      android:layout_gravity="center"
+      android:layout_height="55.5dp"
+      android:id="@+id/CityInputLayout">
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/cityNameET"
+        android:textColor="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter your city name" />
+  </android.support.design.widget.TextInputLayout>
     <Button
         android:text="@string/login"
         android:layout_width="366.0dp"
