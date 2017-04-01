@@ -30,14 +30,15 @@ namespace KoshelnykAndroidTestTask
 
             Authentication authentication = new Authentication();
 
-            FindViewById<Button>(Resource.Id.loginBn).Click += async delegate
+            FindViewById<Button>(Resource.Id.loginBn).Click += delegate
             {
                 if (isOnline == true)
                 {
                     //var url = "https://networkrail-uk-qa.traffilog.com/UK/api/User/Login?username=" + loginET.Text +
                        //       "%40live.com&password=" + passwordET.Text + "&api_key=%2FUK%2Fapi%2FUser%2FLogin";
                        var url= "https://networkrail-uk-qa.traffilog.com/UK/api/User/Login?username=nemesises%40live.com&password=dontoretto23&api_key=%2FUK%2Fapi%2FUser%2FLogin";
-                    await authentication.FetchAsync(url);
+                    //await authentication.FetchAsync(url);
+                        authentication.Auth();
                     //StartActivity(new Intent(this, typeof(HomeActivity)));
                 }
                 else
