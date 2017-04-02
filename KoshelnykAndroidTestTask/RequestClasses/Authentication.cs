@@ -14,7 +14,7 @@ namespace KoshelnykAndroidTestTask.RequestClasses
 {
     public class Authentication
     {
-        public async Task<bool> Auth(string login,string password)
+        public void Auth(string login,string password)
         {
             var client = new RestClient("https://networkrail-uk-qa.traffilog.com");
             var request = new RestRequest("UK/api/User/Login", Method.POST);
@@ -25,8 +25,6 @@ namespace KoshelnykAndroidTestTask.RequestClasses
             var content = response.Content;
             //Console.WriteLine("FFFFFFFF" + (int)response.StatusCode);
             Console.WriteLine(content);
-
-            return true;
         }
     }
 }
