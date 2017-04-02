@@ -4,6 +4,8 @@ using Android.Content.PM;
 using Android.Net;
 using Android.Widget;
 using Android.OS;
+using Android.Views;
+using Android.Views.Animations;
 using KoshelnykAndroidTestTask.RequestClasses;
 
 namespace KoshelnykAndroidTestTask
@@ -16,7 +18,11 @@ namespace KoshelnykAndroidTestTask
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-             SetContentView (Resource.Layout.Main);
+            SetContentView(Resource.Layout.Main);
+
+            Animation myAnimation = AnimationUtils.LoadAnimation(this, Resource.Animation.myAnimation);
+            ImageView myImage = FindViewById<ImageView>(Resource.Id.animIV);
+            myImage.Visibility = ViewStates.Gone;
 
             //checking internet connection
             ConnectivityManager connectivityManager = (ConnectivityManager)GetSystemService(ConnectivityService);
@@ -30,16 +36,15 @@ namespace KoshelnykAndroidTestTask
 
             Authentication authentication = new Authentication();
 
-            FindViewById<Button>(Resource.Id.loginBn).Click += delegate
+            FindViewById<Button>(Resource.Id.loginBn).Click += async delegate
             {
                 if (isOnline == true)
                 {
-                    //var url = "https://networkrail-uk-qa.traffilog.com/UK/api/User/Login?username=" + loginET.Text +
-                       //       "%40live.com&password=" + passwordET.Text + "&api_key=%2FUK%2Fapi%2FUser%2FLogin";
-                       var url= "https://networkrail-uk-qa.traffilog.com/UK/api/User/Login?username=nemesises%40live.com&password=dontoretto23&api_key=%2FUK%2Fapi%2FUser%2FLogin";
-                    //await authentication.FetchAsync(url);
-                        authentication.Auth();
-                    //StartActivity(new Intent(this, typeof(HomeActivity)));
+                    Toast.MakeText(this, "Authentication", ToastLength.Short).Show();
+                    myImage.Visibility=ViewStates.Visible;
+                    myImage.StartAnimation(myAnimation);
+                    await authentication.Auth(loginET.Text, passwordET.Text);
+                    StartActivity(new Intent(this, typeof(HomeActivity)));
                 }
                 else
                 {
