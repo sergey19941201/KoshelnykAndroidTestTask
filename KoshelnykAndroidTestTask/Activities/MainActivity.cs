@@ -20,6 +20,8 @@ namespace KoshelnykAndroidTestTask
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+            var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
+            var filename = System.IO.Path.Combine(path, "sessionToken.txt");
             Animation myAnimation = AnimationUtils.LoadAnimation(this, Resource.Animation.myAnimation);
             ImageView myImage = FindViewById<ImageView>(Resource.Id.animIV);
             myImage.Visibility = ViewStates.Gone;

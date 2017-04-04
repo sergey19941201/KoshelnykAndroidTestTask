@@ -109,9 +109,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HomeActivity.cs" />
-    <Compile Include="MainActivity.cs" />
+    <Compile Include="Activities\DriverReportActivity.cs" />
+    <Compile Include="Activities\HomeActivity.cs" />
+    <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="RequestClasses\Authentication.cs" />
+    <Compile Include="RequestClasses\GetDriverReportInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -124,6 +126,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\anim\myAnimation.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\DriverReport.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -346,6 +351,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\anim.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

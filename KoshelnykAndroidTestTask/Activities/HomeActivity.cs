@@ -11,6 +11,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using KoshelnykAndroidTestTask.Activities;
 
 namespace KoshelnykAndroidTestTask
 {
@@ -36,8 +37,13 @@ namespace KoshelnykAndroidTestTask
             }
             else
             {
-
+                FindViewById<ImageButton>(Resource.Id.drivingReportBn).Click += HomeActivity_Click;
             }
+        }
+
+        private void HomeActivity_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(DriverReportActivity)));
         }
     }
 }

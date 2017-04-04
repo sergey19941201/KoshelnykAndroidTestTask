@@ -15,10 +15,16 @@ namespace KoshelnykAndroidTestTask.RequestClasses
 {
     public class Authentication
     {
+        public static string sessionToken;
+
+        //private string tokenFromCache;
         public void Auth(string login, string password)
         {
             login = "yaniv@nr.co.il";
             password = "Aa123456";
+
+
+            
             var client = new RestClient("https://networkrail-uk-qa.traffilog.com");
             var request = new RestRequest("/qa/api/User/Login", Method.POST);
             request.AddQueryParameter("username", login);
@@ -28,16 +34,51 @@ namespace KoshelnykAndroidTestTask.RequestClasses
             var content = response.Content;
 
             string[] contentArr = content.Split('"');
-            string token = contentArr[5];
+            sessionToken = contentArr[5];
+
+            /*var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
+            var filename = Path.Combine(path, "cache.txt");
+
+            
+
+            File.WriteAllText(filename, sessionToken);
+
+            File.ReadAllText(filename);*/
+
+
+            /*string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string filename = Path.Combine(path, "sessionToken.txt");
+
+            using (var streamReader = new StreamReader(filename))
+            {
+                tokenFromCache = streamReader.ReadToEnd();
+                System.Diagnostics.Debug.WriteLine(tokenFromCache);
+
+                streamReader.DiscardBufferedData();
+            }
+
+            using (var streamWriter = new StreamWriter(filename, true))
+            {
+                streamWriter.WriteLine(sessionToken);
+            }*/
 
 
 
-/*
-            var requestLoginData = new RestRequest("/qa/api/User//UK/api/User/LoginData");
-            requestLoginData.AddQueryParameter("sessionToken", token);
+
+            //getting loginData
+            var requestLoginData = new RestRequest("/qa/api/User/LoginData", Method.POST);
+            requestLoginData.AddQueryParameter("sessionToken", sessionToken);
 
             IRestResponse responseLoginData = client.Execute(requestLoginData);
-            var contentLoginData = responseLoginData.Content;*/
+            var contentLoginData = responseLoginData.Content;/**/
+            //getting loginData ENDED
+
+
+
+
+
+
+
         }
     }
 }
