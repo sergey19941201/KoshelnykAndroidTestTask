@@ -43,7 +43,7 @@ namespace KoshelnykAndroidTestTask.Activities
             }
 
             string[] contentArr = jsonString.Split('"');
-            //FindViewById<TextView>(Resource.Id.).Text = "Driver ID: " + contentArr[7];
+            FindViewById<TextView>(Resource.Id.DriverStatus).Text = "Driver Status" + contentArr[2];
             FindViewById<TextView>(Resource.Id.DriverId).Text = "Driver ID: " + contentArr[7];
             FindViewById<TextView>(Resource.Id.turnsCountTV).Text = "Turns count: " + contentArr[11];
             FindViewById<TextView>(Resource.Id.TurnsPer).Text = "Turns per: " + contentArr[15];
