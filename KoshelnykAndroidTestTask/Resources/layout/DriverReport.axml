@@ -31,7 +31,7 @@
                 android:layout_height="61.0dp"
                 android:id="@+id/settingBn"
                 android:background="@drawable/settingbtn"
-                android:layout_marginLeft="140dp"
+                android:layout_marginLeft="14dp"
                 android:layout_marginTop="26.0dp" />
             <TextView
                 android:text="@string/goodMorning"
@@ -42,7 +42,8 @@
                 android:gravity="center_vertical"
                 android:layout_marginTop="52.0dp"
                 android:textSize="20dp"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="239.0dp" />
             <TextView
                 android:text="online"
                 android:layout_width="wrap_content"
@@ -59,7 +60,8 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout2">
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="0.0dp">
             <RelativeLayout
                 android:orientation="horizontal"
                 android:minWidth="25px"
@@ -75,17 +77,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:layout_alignParentLeft="true" />
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="116.0dp" />
                 <TextView
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/DriverStatus"
                     android:textColor="#000000"
                     android:text="df"
-                    android:layout_width="wrap_content"
+                    android:layout_width="348.0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30.0dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="383.0dp" />
+                    android:layout_marginRight="13.0dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:orientation="horizontal"
@@ -99,18 +102,19 @@
                     android:id="@+id/SpeedPer"
                     android:textColor="#000000"
                     android:text="df"
-                    android:layout_width="wrap_content"
+                    android:layout_width="348.0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30.0dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="383.0dp" />
+                    android:layout_marginRight="13.0dp" />
                 <TextView
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/SpeedCount"
                     android:textColor="#000000"
                     android:text="df"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="116.0dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:orientation="horizontal"
@@ -125,17 +129,18 @@
                     android:textColor="#000000"
                     android:text="df"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="116.0dp" />
                 <TextView
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/AccelarationCount"
                     android:textColor="#000000"
                     android:text="df"
-                    android:layout_width="wrap_content"
+                    android:layout_width="348.0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30.0dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="383.0dp" />
+                    android:layout_marginRight="13.0dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:orientation="horizontal"
@@ -150,17 +155,18 @@
                     android:textColor="#000000"
                     android:text="df"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="116.0dp" />
                 <TextView
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/AccelarationPer"
                     android:textColor="#000000"
                     android:text="df"
-                    android:layout_width="wrap_content"
+                    android:layout_width="348.0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30.0dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="383.0dp" />
+                    android:layout_marginRight="13.0dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:orientation="horizontal"
@@ -175,17 +181,18 @@
                     android:textColor="#000000"
                     android:text="df"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="116.0dp" />
                 <TextView
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/GradeTypeDescription"
                     android:textColor="#000000"
                     android:text="df"
-                    android:layout_width="wrap_content"
+                    android:layout_width="348.0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30.0dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="383.0dp" />
+                    android:layout_marginRight="13.0dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:orientation="horizontal"
@@ -200,17 +207,18 @@
                     android:textColor="#000000"
                     android:text="df"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="116.0dp" />
                 <TextView
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/GradeType"
                     android:textColor="#000000"
                     android:text="df"
-                    android:layout_width="wrap_content"
+                    android:layout_width="348.0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30.0dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="383.0dp" />
+                    android:layout_marginRight="13.0dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:orientation="horizontal"
