@@ -1,22 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
-    <LinearLayout
+    android:minHeight="25px"
+    android:background="@drawable/login_image">
+    <RelativeLayout
         android:orientation="vertical"
         android:minWidth="25px"
         android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="260.0dp"
+        android:layout_width="427.0dp"
+        android:layout_height="577.0dp"
         android:id="@+id/linearLayout1">
+        <ImageView
+            android:src="@drawable/traffilog_logo_1024_x_3592"
+            android:layout_height="75.0dp"
+            android:id="@+id/imageView1"
+            android:layout_marginTop="91.0dp"
+            android:layout_marginLeft="160.0dp"
+            android:layout_width="180.0dp" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/loginET"
+            android:textColor="#ffffff"
+            android:layout_width="321.0dp"
+            android:layout_height="54.0dp"
+            android:hint="@string/loginHint"
+            android:layout_marginTop="211.0dp"
+            android:layout_marginLeft="121.5dp"
+            android:background="#00ffffff" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/passwordET"
+            android:textColor="#ffffff"
+            android:layout_width="327.0dp"
+            android:layout_height="50.0dp"
+            android:hint="@string/passwordHint"
+            android:layout_marginTop="268.5dp"
+            android:layout_marginLeft="121.5dp"
+            android:background="#00ffffff"
+            android:inputType="textPassword" />
         <Button
-            android:text="Button"
-            android:layout_width="match_parent"
-            android:layout_height="182.0dp"
-            android:id="@+id/button1"
-            android:background="@drawable/header" />
-    </LinearLayout>
-</LinearLayout>
+            android:text="@string/login"
+            android:layout_width="366.0dp"
+            android:layout_height="59.0dp"
+            android:id="@+id/loginBn"
+            android:layout_marginTop="360.8dp"
+            android:background="#f6a623"
+            android:textSize="34dp"
+            android:layout_marginLeft="75.9dp" />
+        <Button
+            android:text="@string/forgotYourPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotYourPassword"
+            android:layout_marginTop="435.0dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="#00ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="175.8dp" />
+        <TextView
+            android:text="@string/AllRightsReserved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotYourPassword"
+            android:layout_marginTop="537.1dp"
+            android:textAllCaps="false"
+            android:textColor="#878787"
+            android:textSize="18dp"
+            android:layout_marginLeft="27.0dp" />
+        <ImageView
+            android:layout_width="30.0dp"
+            android:layout_height="30.0dp"
+            android:layout_below="@id/imageView1"
+            android:id="@+id/animIV"
+            android:layout_marginLeft="236.0dp"
+            android:layout_marginTop="158.0dp"
+            android:background="@drawable/anim" />
+    </RelativeLayout>
+</RelativeLayout>

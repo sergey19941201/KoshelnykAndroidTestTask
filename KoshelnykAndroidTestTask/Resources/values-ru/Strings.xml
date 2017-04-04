@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">KoshelnykAndroidTestTask</string>
+  <string name="goodMorning">Доброе утро!</string>
+  <string name="login">ЛОГИН</string>
+  <string name="loginHint">имя пользователя</string>
+  <string name="passwordHint">пароль</string>
+  <string name="forgotYourPassword">Забыли пароль?</string>
+  <string name="AllRightsReserved">©2016 Traffilog Ltd. Все права защищены.</string>
+  <string name="online">онлайн</string>
+</resources>
