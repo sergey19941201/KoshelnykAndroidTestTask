@@ -69,7 +69,7 @@
                 android:layout_height="49.0dp"
                 android:id="@+id/linearLayout5">
                 <TextView
-                    android:text="Driving Report"
+                    android:text="Vehicle Check"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

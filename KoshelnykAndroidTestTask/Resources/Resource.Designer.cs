@@ -118,65 +118,65 @@ namespace KoshelnykAndroidTestTask
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06000c
-			public const int AccelarationCount = 2131099660;
-			
 			// aapt resource value: 0x7f06000e
-			public const int AccelarationPer = 2131099662;
-			
-			// aapt resource value: 0x7f06000f
-			public const int BrakesCount = 2131099663;
-			
-			// aapt resource value: 0x7f060011
-			public const int BrakesPer = 2131099665;
-			
-			// aapt resource value: 0x7f060007
-			public const int DriverId = 2131099655;
-			
-			// aapt resource value: 0x7f060008
-			public const int DriverStatus = 2131099656;
-			
-			// aapt resource value: 0x7f060012
-			public const int GradeType = 2131099666;
+			public const int AccelarationCount = 2131099662;
 			
 			// aapt resource value: 0x7f060010
-			public const int GradeTypeDescription = 2131099664;
+			public const int AccelarationPer = 2131099664;
 			
-			// aapt resource value: 0x7f06000a
-			public const int SpeedCount = 2131099658;
-			
-			// aapt resource value: 0x7f060009
-			public const int SpeedPer = 2131099657;
+			// aapt resource value: 0x7f060011
+			public const int BrakesCount = 2131099665;
 			
 			// aapt resource value: 0x7f060013
-			public const int Tip = 2131099667;
+			public const int BrakesPer = 2131099667;
 			
-			// aapt resource value: 0x7f06000d
-			public const int TurnsPer = 2131099661;
+			// aapt resource value: 0x7f060009
+			public const int DriverId = 2131099657;
 			
-			// aapt resource value: 0x7f060020
-			public const int animIV = 2131099680;
+			// aapt resource value: 0x7f06000a
+			public const int DriverStatus = 2131099658;
 			
-			// aapt resource value: 0x7f06001a
-			public const int driving_ReportBn = 2131099674;
+			// aapt resource value: 0x7f060014
+			public const int GradeType = 2131099668;
 			
-			// aapt resource value: 0x7f06001f
-			public const int forgotYourPassword = 2131099679;
+			// aapt resource value: 0x7f060012
+			public const int GradeTypeDescription = 2131099666;
+			
+			// aapt resource value: 0x7f06000c
+			public const int SpeedCount = 2131099660;
+			
+			// aapt resource value: 0x7f06000b
+			public const int SpeedPer = 2131099659;
+			
+			// aapt resource value: 0x7f060015
+			public const int Tip = 2131099669;
+			
+			// aapt resource value: 0x7f06000f
+			public const int TurnsPer = 2131099663;
+			
+			// aapt resource value: 0x7f060022
+			public const int animIV = 2131099682;
+			
+			// aapt resource value: 0x7f06001c
+			public const int driving_ReportBn = 2131099676;
+			
+			// aapt resource value: 0x7f060021
+			public const int forgotYourPassword = 2131099681;
 			
 			// aapt resource value: 0x7f060001
 			public const int helpBn = 2131099649;
 			
-			// aapt resource value: 0x7f060017
-			public const int i_c_eBn = 2131099671;
+			// aapt resource value: 0x7f060019
+			public const int i_c_eBn = 2131099673;
 			
-			// aapt resource value: 0x7f06001b
-			public const int imageView1 = 2131099675;
+			// aapt resource value: 0x7f06001d
+			public const int imageView1 = 2131099677;
 			
 			// aapt resource value: 0x7f060004
 			public const int isOnline = 2131099652;
 			
-			// aapt resource value: 0x7f060016
-			public const int journeySelectionBn = 2131099670;
+			// aapt resource value: 0x7f060018
+			public const int journeySelectionBn = 2131099672;
 			
 			// aapt resource value: 0x7f060000
 			public const int linearLayout1 = 2131099648;
@@ -184,26 +184,29 @@ namespace KoshelnykAndroidTestTask
 			// aapt resource value: 0x7f060005
 			public const int linearLayout2 = 2131099653;
 			
+			// aapt resource value: 0x7f060008
+			public const int linearLayout4 = 2131099656;
+			
 			// aapt resource value: 0x7f060006
-			public const int linearLayout4 = 2131099654;
+			public const int linearLayout5 = 2131099654;
+			
+			// aapt resource value: 0x7f060020
+			public const int loginBn = 2131099680;
 			
 			// aapt resource value: 0x7f06001e
-			public const int loginBn = 2131099678;
+			public const int loginET = 2131099678;
 			
-			// aapt resource value: 0x7f06001c
-			public const int loginET = 2131099676;
+			// aapt resource value: 0x7f060017
+			public const int messagingBn = 2131099671;
 			
-			// aapt resource value: 0x7f060015
-			public const int messagingBn = 2131099669;
+			// aapt resource value: 0x7f060016
+			public const int navigBn = 2131099670;
 			
-			// aapt resource value: 0x7f060014
-			public const int navigBn = 2131099668;
+			// aapt resource value: 0x7f06001f
+			public const int passwordET = 2131099679;
 			
-			// aapt resource value: 0x7f06001d
-			public const int passwordET = 2131099677;
-			
-			// aapt resource value: 0x7f060018
-			public const int pointOfInterestBn = 2131099672;
+			// aapt resource value: 0x7f06001a
+			public const int pointOfInterestBn = 2131099674;
 			
 			// aapt resource value: 0x7f060002
 			public const int settingBn = 2131099650;
@@ -211,11 +214,14 @@ namespace KoshelnykAndroidTestTask
 			// aapt resource value: 0x7f060003
 			public const int textView1 = 2131099651;
 			
-			// aapt resource value: 0x7f06000b
-			public const int turnsCountTV = 2131099659;
+			// aapt resource value: 0x7f060007
+			public const int textView2 = 2131099655;
 			
-			// aapt resource value: 0x7f060019
-			public const int vehicleCheckBn = 2131099673;
+			// aapt resource value: 0x7f06000d
+			public const int turnsCountTV = 2131099661;
+			
+			// aapt resource value: 0x7f06001b
+			public const int vehicleCheckBn = 2131099675;
 			
 			static Id()
 			{
@@ -238,6 +244,9 @@ namespace KoshelnykAndroidTestTask
 			
 			// aapt resource value: 0x7f030002
 			public const int Main = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int VehicleCheck = 2130903043;
 			
 			static Layout()
 			{
