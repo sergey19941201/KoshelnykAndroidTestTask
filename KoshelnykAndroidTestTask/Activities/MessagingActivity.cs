@@ -20,6 +20,7 @@ namespace KoshelnykAndroidTestTask.Activities
     [Activity(Label = "MessagingActivity",Theme = "@android:style/Theme.NoTitleBar", ScreenOrientation = ScreenOrientation.Landscape)]
     public class MessagingActivity : Activity
     {
+        List<string> messagesList = new List<string>();
         protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -36,8 +37,11 @@ namespace KoshelnykAndroidTestTask.Activities
             var responseMessages = JArray.Parse(JObject.Parse(content)["Data"].ToString());
             foreach (var message in responseMessages)
             {
-                var rootObject =  (string)message["Text"];
+                messagesList.Add((string)message["Text"]);
             }
+            Classes.Adapter adapter = new Classes.Adapter(this, messagesList);
+
+            FindViewById<ListView>(Resource.Id.messagesLV).Adapter = adapter;
         }
     }
 }
