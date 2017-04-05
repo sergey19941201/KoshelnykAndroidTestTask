@@ -1,16 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 using Android.Content;
-using Android.Media;
-//using Java.Lang.Reflect;
 using Newtonsoft.Json.Linq;
 using RestSharp;
-using RestSharp.Authenticators;
-using RestSharp.Extensions;
 
 namespace KoshelnykAndroidTestTask.RequestClasses
 {
@@ -21,11 +12,7 @@ namespace KoshelnykAndroidTestTask.RequestClasses
         //private string tokenFromCache;
         public bool Auth(string login, string password, Action<Intent> navigationFunc, Intent intent)
         {
-            login = "yaniv@nr.co.il";
-            password = "Aa123456";
-
-
-
+            //client login
             var client = new RestClient("https://networkrail-uk-qa.traffilog.com");
             var  request = new RestRequest("/qa/api/User/Login", Method.POST);
             request.AddQueryParameter("username", login);
@@ -50,16 +37,11 @@ namespace KoshelnykAndroidTestTask.RequestClasses
                 IRestResponse responseLoginData = client.Execute(requestLoginData);
                 var contentLoginData = responseLoginData.Content;
                 string[] LoginDataArr = contentLoginData.Split('"');
+                //this name will be displayed in right upper corner of the screen:
                 workerName = LoginDataArr[29];
                 //getting loginData ENDED
 
-                //get vehicle check
-                var requestVehicleCheck = new RestRequest("qa/api/VehicleCheck/GetVehicleCheck", Method.POST);
-                requestVehicleCheck.AddQueryParameter("sessionToken", sessionToken);
-                IRestResponse responseVehicleCheck = client.Execute(requestVehicleCheck);
-                var contentVehicleCheck = responseVehicleCheck.Content;
-                //get vehicle check ENDED
-
+                //Start HomeActivity
                 navigationFunc(intent);
             }
             return true;

@@ -20,8 +20,7 @@ namespace KoshelnykAndroidTestTask
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            var path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
-            var filename = System.IO.Path.Combine(path, "sessionToken.txt");
+            //declaring animation
             Animation myAnimation = AnimationUtils.LoadAnimation(this, Resource.Animation.myAnimation);
             ImageView myImage = FindViewById<ImageView>(Resource.Id.animIV);
             myImage.Visibility = ViewStates.Gone;
@@ -45,7 +44,7 @@ namespace KoshelnykAndroidTestTask
                     myImage.Visibility = ViewStates.Visible;
                     myImage.StartAnimation(myAnimation);
                     Toast.MakeText(this, "Authentication", ToastLength.Short).Show();
-                    bool authentic = authentication.Auth(loginET.Text, passwordET.Text,StartActivity, new Intent(this, typeof(Home_Activity)));
+                    bool authentic = authentication.Auth(loginET.Text, passwordET.Text, StartActivity, new Intent(this, typeof(Home_Activity)));
                     if (authentic == false)
                     {
                         Toast.MakeText(this, "Incorrect username or password", ToastLength.Short).Show();

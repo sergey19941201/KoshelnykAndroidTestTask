@@ -12,7 +12,7 @@
         android:layout_gravity="center_horizontal"
         cardview:cardBackgroundColor="#FFFFF0"
         cardview:cardElevation="1dp"
-        cardview:cardCornerRadius="5dp">
+        cardview:cardCornerRadius="10dp">
         <TextView
             android:layout_marginTop="0dp"
             android:layout_width="match_parent"

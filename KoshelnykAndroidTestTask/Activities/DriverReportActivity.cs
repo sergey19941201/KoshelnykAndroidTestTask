@@ -12,6 +12,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using KoshelnykAndroidTestTask.RequestClasses;
+using Newtonsoft.Json.Linq;
 
 namespace KoshelnykAndroidTestTask.Activities
 {

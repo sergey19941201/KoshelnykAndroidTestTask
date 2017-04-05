@@ -20,16 +20,16 @@ namespace KoshelnykAndroidTestTask.Activities
     [Activity(Label = "MessagingActivity",Theme = "@android:style/Theme.NoTitleBar", ScreenOrientation = ScreenOrientation.Landscape)]
     public class MessagingActivity : Activity
     {
+        //list of messages
         List<string> messagesList = new List<string>();
-        protected override async void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Messaging);
 
             FindViewById<TextView>(Resource.Id.hiUser).Text = "Hi " + Authentication.workerName;
-
-            //var messageUrl = "https://networkrail-uk-qa.traffilog.com/qa/api/Message/GetTemplates?sessionToken=" + Authentication.sessionToken;
+            //getting messages
             var client = new RestClient("https://networkrail-uk-qa.traffilog.com");
             var requestMessages = new RestRequest("/qa/api/Message/GetTemplates", Method.POST);
             requestMessages.AddQueryParameter("sessionToken", Authentication.sessionToken);
@@ -37,12 +37,14 @@ namespace KoshelnykAndroidTestTask.Activities
             IRestResponse responsemessages = client.Execute(requestMessages);
             var content = responsemessages.Content;
             var responseMessages = JArray.Parse(JObject.Parse(content)["Data"].ToString());
+            //getting messages ended
             foreach (var message in responseMessages)
             {
                 messagesList.Add((string)message["Text"]);
             }
+            //declaring adapter
             Classes.Adapter adapter = new Classes.Adapter(this, messagesList);
-
+            
             FindViewById<ListView>(Resource.Id.messagesLV).Adapter = adapter;
         }
     }
