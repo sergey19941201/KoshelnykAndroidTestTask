@@ -322,9 +322,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\greenRound.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\CustomXml\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\redRound.png" />
   </ItemGroup>

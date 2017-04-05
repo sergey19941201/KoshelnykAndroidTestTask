@@ -20,19 +20,19 @@
             android:layout_width="match_parent"
             android:layout_height="117.0dp">
             <ImageButton
-                android:layout_width="61.0dp"
-                android:layout_height="61.0dp"
+                android:layout_width="41.0dp"
+                android:layout_height="41.0dp"
                 android:id="@+id/helpBn"
                 android:background="@drawable/help"
                 android:layout_marginLeft="140dp"
-                android:layout_marginTop="19dp" />
+                android:layout_marginTop="32.0dp" />
             <ImageButton
-                android:layout_width="61.0dp"
-                android:layout_height="61.0dp"
+                android:layout_width="41.0dp"
+                android:layout_height="41.0dp"
                 android:id="@+id/settingBn"
                 android:background="@drawable/settingbtn"
-                android:layout_marginLeft="50.0dp"
-                android:layout_marginTop="19.0dp" />
+                android:layout_marginLeft="84.0dp"
+                android:layout_marginTop="32.0dp" />
             <TextView
                 android:text="@string/goodMorning"
                 android:layout_width="wrap_content"
