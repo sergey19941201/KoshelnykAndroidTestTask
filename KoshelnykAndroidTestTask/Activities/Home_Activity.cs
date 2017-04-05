@@ -38,7 +38,13 @@ namespace KoshelnykAndroidTestTask
             else
             {
                 FindViewById<ImageButton>(Resource.Id.driving_ReportBn).Click += HomeActivity_Click;
+                FindViewById<ImageButton>(Resource.Id.messagingBn).Click += Home_Activity_Click;
             }
+        }
+
+        private void Home_Activity_Click(object sender, EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(MessagingActivity)));
         }
 
         private void HomeActivity_Click(object sender, EventArgs e)

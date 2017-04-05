@@ -66,6 +66,7 @@
     <Compile Include="Activities\Home_Activity.cs" />
     <Compile Include="Activities\DriverReportActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Activities\MessagingActivity.cs" />
     <Compile Include="Activities\VehicleCheckActivity.cs" />
     <Compile Include="RequestClasses\Authentication.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -83,6 +84,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\VehicleCheck.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Messaging.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

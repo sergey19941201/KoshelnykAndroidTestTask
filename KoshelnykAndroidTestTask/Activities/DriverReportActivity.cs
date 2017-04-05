@@ -31,7 +31,7 @@ namespace KoshelnykAndroidTestTask.Activities
         }
 
 
-        public async Task<string> FetchAsync(string url)
+        private async Task<string> FetchAsync(string url)
         {
             string jsonString; //string for getting data from the url
             //getting data process goes here

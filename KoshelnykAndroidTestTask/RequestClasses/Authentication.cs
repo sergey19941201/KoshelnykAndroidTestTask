@@ -44,6 +44,14 @@ namespace KoshelnykAndroidTestTask.RequestClasses
             IRestResponse responseLoginData = client.Execute(requestLoginData);
             var contentLoginData = responseLoginData.Content;
             //getting loginData ENDED
+
+
+            //get vehicle check
+            var requestVehicleCheck = new RestRequest("qa/api/VehicleCheck/GetVehicleCheck", Method.POST);
+            requestVehicleCheck.AddQueryParameter("sessionToken", sessionToken);
+            IRestResponse responseVehicleCheck = client.Execute(requestVehicleCheck);
+            var contentVehicleCheck = responseVehicleCheck.Content;
+            //get vehicle check ENDED
         }
     }
 }
