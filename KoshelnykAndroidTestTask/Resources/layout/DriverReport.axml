@@ -20,19 +20,19 @@
             android:layout_width="match_parent"
             android:layout_height="117.0dp">
             <ImageButton
-                android:layout_width="61.0dp"
-                android:layout_height="61.0dp"
+                android:layout_width="41.0dp"
+                android:layout_height="41.0dp"
                 android:id="@+id/helpBn"
                 android:background="@drawable/help"
                 android:layout_marginLeft="140dp"
-                android:layout_marginTop="19dp" />
+                android:layout_marginTop="32.0dp" />
             <ImageButton
-                android:layout_width="61.0dp"
-                android:layout_height="61.0dp"
+                android:layout_width="41.0dp"
+                android:layout_height="41.0dp"
                 android:id="@+id/settingBn"
                 android:background="@drawable/settingbtn"
-                android:layout_marginLeft="50.0dp"
-                android:layout_marginTop="19.0dp" />
+                android:layout_marginLeft="84.0dp"
+                android:layout_marginTop="32.0dp" />
             <TextView
                 android:text="@string/goodMorning"
                 android:layout_width="wrap_content"
@@ -51,7 +51,29 @@
                 android:textColor="#000000"
                 android:layout_marginTop="38.0dp"
                 android:textSize="20dp"
-                android:layout_marginLeft="769.0dp" />
+                android:layout_marginLeft="677.0dp" />
+            <ImageView
+                android:background="@drawable/greenRound"
+                android:layout_width="20.0dp"
+                android:layout_height="20.0dp"
+                android:id="@+id/imageView1"
+                android:layout_marginTop="44.0dp"
+                android:layout_marginLeft="654.0dp" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/isOnline"
+                android:id="@+id/imageView1" />
+            <TextView
+                android:text="Hi"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dp"
+                android:id="@+id/hiUser"
+                android:textColor="#000000"
+                android:layout_marginTop="38.0dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="753.0dp" />
         </RelativeLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -90,7 +112,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/DriverId"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -100,7 +122,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/DriverStatus"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="348.0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30.0dp"
@@ -118,7 +140,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/SpeedPer"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="348.0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30.0dp"
@@ -128,7 +150,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/SpeedCount"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="116.0dp" />
@@ -144,7 +166,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/turnsCountTV"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="116.0dp" />
@@ -152,7 +174,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/AccelarationCount"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="348.0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30.0dp"
@@ -170,7 +192,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/TurnsPer"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="116.0dp" />
@@ -178,7 +200,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/AccelarationPer"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="348.0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30.0dp"
@@ -196,7 +218,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/BrakesCount"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="116.0dp" />
@@ -204,7 +226,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/GradeTypeDescription"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="348.0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30.0dp"
@@ -222,7 +244,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/BrakesPer"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="116.0dp" />
@@ -230,7 +252,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/GradeType"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="348.0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30.0dp"
@@ -249,7 +271,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:id="@+id/Tip"
                     android:textColor="#000000"
-                    android:text="df"
+                    android:text="Loading..."
                     android:layout_width="792.0dp"
                     android:layout_height="145.0dp"
                     android:layout_centerInParent="true"

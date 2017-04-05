@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using KoshelnykAndroidTestTask.RequestClasses;
 
 namespace KoshelnykAndroidTestTask.Activities
 {
@@ -22,7 +23,7 @@ namespace KoshelnykAndroidTestTask.Activities
 
             SetContentView(Resource.Layout.VehicleCheck);
 
-
+            FindViewById<TextView>(Resource.Id.hiUser).Text = "Hi " + Authentication.workerName;
         }
     }
 }

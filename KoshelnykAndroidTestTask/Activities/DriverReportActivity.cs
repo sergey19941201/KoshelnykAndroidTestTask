@@ -26,6 +26,7 @@ namespace KoshelnykAndroidTestTask.Activities
 
             var driverUrl = "https://networkrail-uk-qa.traffilog.com/qa/api/DriverReport/Get?sessionToken=" + Authentication.sessionToken;
 
+            FindViewById<TextView>(Resource.Id.hiUser).Text = "Hi " + Authentication.workerName;
             //GetDriverReportInfo getDriverReportInfo = new GetDriverReportInfo();
             await FetchAsync(driverUrl);
         }

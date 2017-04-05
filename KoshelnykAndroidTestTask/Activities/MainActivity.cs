@@ -38,15 +38,19 @@ namespace KoshelnykAndroidTestTask
 
             Authentication authentication = new Authentication();
 
-            FindViewById<Button>(Resource.Id.loginBn).Click += delegate
+            FindViewById<Button>(Resource.Id.loginBn).Click +=  delegate
             {
                 if (isOnline == true)
                 {
-                    Toast.MakeText(this, "Authentication", ToastLength.Short).Show();
                     myImage.Visibility = ViewStates.Visible;
                     myImage.StartAnimation(myAnimation);
-                    authentication.Auth(loginET.Text, passwordET.Text);
-                    StartActivity(new Intent(this, typeof(Home_Activity)));
+                    Toast.MakeText(this, "Authentication", ToastLength.Short).Show();
+                    bool authentic = authentication.Auth(loginET.Text, passwordET.Text,StartActivity, new Intent(this, typeof(Home_Activity)));
+                    if (authentic == false)
+                    {
+                        Toast.MakeText(this, "Incorrect username or password", ToastLength.Short).Show();
+                        myImage.Visibility = ViewStates.Gone;
+                    }
                 }
                 else
                 {

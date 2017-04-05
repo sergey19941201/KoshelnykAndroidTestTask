@@ -27,6 +27,8 @@ namespace KoshelnykAndroidTestTask.Activities
 
             SetContentView(Resource.Layout.Messaging);
 
+            FindViewById<TextView>(Resource.Id.hiUser).Text = "Hi " + Authentication.workerName;
+
             //var messageUrl = "https://networkrail-uk-qa.traffilog.com/qa/api/Message/GetTemplates?sessionToken=" + Authentication.sessionToken;
             var client = new RestClient("https://networkrail-uk-qa.traffilog.com");
             var requestMessages = new RestRequest("/qa/api/Message/GetTemplates", Method.POST);

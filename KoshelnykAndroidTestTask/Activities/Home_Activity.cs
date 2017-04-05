@@ -12,6 +12,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using KoshelnykAndroidTestTask.Activities;
+using KoshelnykAndroidTestTask.RequestClasses;
 
 namespace KoshelnykAndroidTestTask
 {
@@ -37,6 +38,7 @@ namespace KoshelnykAndroidTestTask
             }
             else
             {
+                FindViewById<TextView>(Resource.Id.hiUser).Text = "Hi " + Authentication.workerName;
                 FindViewById<ImageButton>(Resource.Id.driving_ReportBn).Click += HomeActivity_Click;
                 FindViewById<ImageButton>(Resource.Id.messagingBn).Click += Home_Activity_Click;
             }

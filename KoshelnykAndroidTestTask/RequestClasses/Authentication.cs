@@ -16,10 +16,10 @@ namespace KoshelnykAndroidTestTask.RequestClasses
 {
     public class Authentication
     {
-        public static string sessionToken;
+        public static string sessionToken, workerName;
 
         //private string tokenFromCache;
-        public void Auth(string login, string password)
+        public bool Auth(string login, string password, Action<Intent> navigationFunc, Intent intent)
         {
             login = "yaniv@nr.co.il";
             password = "Aa123456";
@@ -27,31 +27,42 @@ namespace KoshelnykAndroidTestTask.RequestClasses
 
 
             var client = new RestClient("https://networkrail-uk-qa.traffilog.com");
-            var request = new RestRequest("/qa/api/User/Login", Method.POST);
+            var  request = new RestRequest("/qa/api/User/Login", Method.POST);
             request.AddQueryParameter("username", login);
             request.AddQueryParameter("password", password);
 
-            IRestResponse response = client.Execute(request);
+            IRestResponse  response = client.Execute(request);
             var content = response.Content;
 
             string[] contentArr = content.Split('"');
             sessionToken = contentArr[5];
 
-            //getting loginData
-            var requestLoginData = new RestRequest("/qa/api/User/LoginData", Method.POST);
-            requestLoginData.AddQueryParameter("sessionToken", sessionToken);
+            if (sessionToken == "")
+            {
+                return false;
+            }
+            else
+            {
+                //getting loginData
+                var requestLoginData = new RestRequest("/qa/api/User/LoginData", Method.POST);
+                requestLoginData.AddQueryParameter("sessionToken", sessionToken);
 
-            IRestResponse responseLoginData = client.Execute(requestLoginData);
-            var contentLoginData = responseLoginData.Content;
-            //getting loginData ENDED
+                IRestResponse responseLoginData = client.Execute(requestLoginData);
+                var contentLoginData = responseLoginData.Content;
+                string[] LoginDataArr = contentLoginData.Split('"');
+                workerName = LoginDataArr[29];
+                //getting loginData ENDED
 
+                //get vehicle check
+                var requestVehicleCheck = new RestRequest("qa/api/VehicleCheck/GetVehicleCheck", Method.POST);
+                requestVehicleCheck.AddQueryParameter("sessionToken", sessionToken);
+                IRestResponse responseVehicleCheck = client.Execute(requestVehicleCheck);
+                var contentVehicleCheck = responseVehicleCheck.Content;
+                //get vehicle check ENDED
 
-            //get vehicle check
-            var requestVehicleCheck = new RestRequest("qa/api/VehicleCheck/GetVehicleCheck", Method.POST);
-            requestVehicleCheck.AddQueryParameter("sessionToken", sessionToken);
-            IRestResponse responseVehicleCheck = client.Execute(requestVehicleCheck);
-            var contentVehicleCheck = responseVehicleCheck.Content;
-            //get vehicle check ENDED
+                navigationFunc(intent);
+            }
+            return true;
         }
     }
 }
