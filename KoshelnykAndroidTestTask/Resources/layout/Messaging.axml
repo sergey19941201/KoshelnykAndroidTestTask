@@ -51,7 +51,21 @@
                 android:textColor="#000000"
                 android:layout_marginTop="38.0dp"
                 android:textSize="20dp"
-                android:layout_marginLeft="769.0dp" />
+                android:layout_marginLeft="782.0dp"
+                android:background="@drawable/roundview" />
+            <ImageView
+                android:background="@drawable/greenRound"
+                android:layout_width="20.0dp"
+                android:layout_height="20.0dp"
+                android:id="@+id/imageView1"
+                android:layout_marginTop="40.0dp"
+                android:layout_marginLeft="754.0dp" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/isOnline"
+                android:id="@+id/imageView1" />
         </RelativeLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -75,7 +89,8 @@
                     android:layout_height="match_parent"
                     android:id="@+id/messagesLV"
                     android:dividerHeight="0dp"
-                    android:divider="#ffffff" />
+                    android:divider="#ffffff"
+                    android:background="@drawable/roundview" />
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
