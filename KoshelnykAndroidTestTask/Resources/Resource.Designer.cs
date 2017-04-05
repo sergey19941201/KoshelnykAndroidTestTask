@@ -150,40 +150,49 @@ namespace KoshelnykAndroidTestTask
 			public const int driving_report = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int header = 2130837507;
+			public const int greenRound = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int help = 2130837508;
+			public const int header = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int i_c_ebtn = 2130837509;
+			public const int help = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int Icon = 2130837510;
+			public const int i_c_ebtn = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int login_image = 2130837511;
+			public const int Icon = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int messaging_btn = 2130837512;
+			public const int login_image = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int nav_button = 2130837513;
+			public const int messaging_btn = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int p_o_i_btn = 2130837514;
+			public const int nav_button = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int select_journey_btn = 2130837515;
+			public const int orangeRound = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int settingbtn = 2130837516;
+			public const int p_o_i_btn = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int traffilog_logo_1024_x_3592 = 2130837517;
+			public const int redRound = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int vhicle_check_btn = 2130837518;
+			public const int select_journey_btn = 2130837518;
+			
+			// aapt resource value: 0x7f02000f
+			public const int settingbtn = 2130837519;
+			
+			// aapt resource value: 0x7f020010
+			public const int traffilog_logo_1024_x_3592 = 2130837520;
+			
+			// aapt resource value: 0x7f020011
+			public const int vhicle_check_btn = 2130837521;
 			
 			static Drawable()
 			{
